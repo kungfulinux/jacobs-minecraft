@@ -26,5 +26,6 @@ jobs:
           username: ${{ secrets.SECRET_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
-          script: 
+          script: |
             whoami
+            ls -al
