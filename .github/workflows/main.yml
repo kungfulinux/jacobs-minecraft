@@ -25,8 +25,8 @@ jobs:
           host: ${{ secrets.HOST }}
           user: ${{ secrets.SECRET_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
-          args: -v 
+          passphrase: ${{ secrets.PASSPHRASE }
           port: ${{ secrets.PORT }}
-          script: |
-            whoami
+          command: |
+            ls -a
+            ps -ef | grep java
