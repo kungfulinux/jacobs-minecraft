@@ -20,13 +20,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: executing remote ssh commands using ssh key
-        uses: appleboy/ssh-action@master
+        uses: fifsky/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.SECRET_USERNAME }}
+          user: ${{ secrets.SECRET_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
+          args: -v 
           port: ${{ secrets.PORT }}
           script: |
             whoami
-            ls -al
