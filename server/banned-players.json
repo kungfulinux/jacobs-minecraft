@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "uuid": "c7ec5fcd-7714-4bf3-981e-4b72f4e329fd",
+    "name": "Anime",
+    "created": "2020-08-04 00:09:33 -0400",
+    "source": "Hamknee",
+    "expires": "forever",
+    "reason": "Banned by an operator."
+  }
+]
